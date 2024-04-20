@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    
+    <link rel="stylesheet" href="assists/style/style.css">
+
+    <script src="assists/scripts/variables.js" defer></script>
+    <script src="assists/scripts/init.js" defer></script>
+    <script src="assists/scripts/drag.js" defer></script>
+    <script src="assists/scripts/buttonEvents.js" defer></script>
+    <script src="assists/scripts/addTask.js" defer></script>
+</head>
+<body>
+	<h2>Kanban</h2>
+    <div class="board">
+        <form id="todo-form">
+            <input type="text" placeholder="new todo" id="todo-input" />
+            <button type="submit">Add</button>
+            <button id="save">Save</button>
+            <button id="clear">Clear</button>
+        </form>
+
+        <div class="lanes">
+            <div class="swin-lane" id="todo-lane">
+                <h3 class="heading">Todo</h3>
+                <!-- Here is the todo task elements -->
+            </div>
+
+            <div class="swin-lane" id="doing-lane">
+                <h3 class="heading">Doing</h3>
+                <!-- Here is the doing task elements -->
+            </div>
+
+            <div class="swin-lane"  id="done-lane">
+                <h3 class="heading">Done</h3>
+                <!-- Here is the done task elements -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
